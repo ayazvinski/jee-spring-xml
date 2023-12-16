@@ -3,12 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="messageService" class="pl.coderslab.EmailService" />
+    <bean id="messageService" class="pl.coderslab.beans.EmailService" />
     <bean id="messageSender" class="pl.coderslab.beans.MessageSender">
         <constructor-arg ref="messageService"/>
-        <property name="message" value="Treść wiadomości" />
+        <property name="message" value="Message from xml" />
     </bean>
-    <bean id="notificationServiceSms" class="pl.coderslab.SmsService" />
+    <bean id="notificationServiceSms" class="pl.coderslab.beans.SmsService" />
     <bean id="messageSenderSms" class="pl.coderslab.beans.MessageSender">
             <constructor-arg ref="notificationServiceSms" />
         <property name="message" value="Treść sms" />

@@ -1,7 +1,8 @@
 package pl.coderslab;
 
-import pl.coderslab.beans.HelloWorld;
+import pl.coderslab.beans.EmailService;
 import pl.coderslab.beans.MessageSender;
+import pl.coderslab.beans.SmsService;
 
 public class Main {
     public static void main(String[] args) {
